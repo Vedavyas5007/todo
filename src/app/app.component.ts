@@ -32,10 +32,24 @@ export class AppComponent {
     
   }
   deleteTask(index:any){
-    
+    const audio= new Audio("drop.mp3");
+    audio.play();
+    setTimeout(
+      ()=>{
+        this.tasks.splice(index,1);
+      },500
+    )
   }
   moveTask(index:any){
-    this.completed_tasks.push(this.tasks[index]);
-    this.tasks.splice(index,1);
+    const audio= new Audio("drop.mp3");
+    audio.play();
+    setTimeout(
+      ()=>{
+
+        this.completed_tasks.push(this.tasks[index]);
+        this.tasks.splice(index,1);
+
+      },500
+    )
   }
 }
