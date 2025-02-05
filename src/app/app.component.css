@@ -1,0 +1,28 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    
+}
+button:hover{
+    scale: 1.1;
+}
+#tas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 150px;
+}
+svg{
+    cursor:  pointer;
+}
